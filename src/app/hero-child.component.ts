@@ -5,14 +5,14 @@ import { Hero } from './hero';
 @Component({
   selector: 'app-hero-child',
   template: `
-    <h3>{{hero.name}} says:</h3>
-    <p>I, {{hero.name}}, am at your service, {{masterName}}.</p>
+    <h3>{{heros.name}} says:</h3>
+    <p>I, {{heros.name}}, am at your service, {{masterName}}.</p>
   `,
 })
 export class HeroChildComponent {
-  @Input() hero!: Hero;
+  @Input() heros!: Hero;
   //the = '' part of the code is an initialization of the masterName property to an empty string in case no value is passed to it.
-  @Input('masterS') masterName = 'test';
+  @Input('masterB') masterName = 'hello';
 }
 
 /*
