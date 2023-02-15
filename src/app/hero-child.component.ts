@@ -7,13 +7,13 @@ import { Hero } from './hero';
   template: `
     <h3>{{hero.name}} says:</h3>
     <p>I, {{hero.name}}, am at your service, {{masterName}}.</p>
-  `
+  `,
 })
 export class HeroChildComponent {
   @Input() hero!: Hero;
-  @Input('master') masterName = '';
+  //the = '' part of the code is an initialization of the masterName property to an empty string in case no value is passed to it.
+  @Input('masterS') masterName = 'test';
 }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.

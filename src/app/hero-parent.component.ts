@@ -10,7 +10,7 @@ import { HEROES } from './hero';
     <app-hero-child
       *ngFor="let hero of heroes"
       [hero]="hero"
-      [master]="master">
+      [masterS]="master">
     </app-hero-child>
   `
 })
@@ -18,7 +18,7 @@ export class HeroParentComponent {
   //import the HEROES array, then assign into heroes array variable
   heroes = HEROES;
   //assign the string Master into the variable master
-  master = 'Master';
+  master = '';
 }
 
 
